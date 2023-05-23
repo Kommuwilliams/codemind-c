@@ -1,12 +1,12 @@
 #include<stdio.h>
 int main()
 {
-    int n,a,b,c; 
+    int n,a,b,c;
     scanf("%d",&n);
     a=0;
     b=1;
-    if(n==0) 
-    printf("True");
+    if(n==0)
+       printf("True");
     c=a+b;
     while(c<n)
     {
@@ -14,12 +14,12 @@ int main()
         a=b;
         b=c;
     }
-    if(c==n) 
+    if(c==n)
     {
         printf("True");
     }
-    else 
+    else
     {
-        printf("False"); 
+        printf("False");
     }
 }
