@@ -1,20 +1,19 @@
 #include<stdio.h>
 int main()
 {
-    int n,i,sum=0;
+    int n,s=0;
     scanf("%d",&n);
-    int a[n];
+    int a[n],i;
     for(i=0;i<n;i++)
     {
         scanf("%d",&a[i]);
-        }
-        for(i=0;i<n;i++)
+    }
+    for(i=1;i<n;i+=2)
+    {
+        if(i%2!=0)
         {
-            if(i%2!=0)
-            {
-                sum=sum+a[i];
-                }
-                }
-                printf("%d",sum);
-    
+            s=s+a[i];
+        }
+    }
+    printf("%d",s);
 }
